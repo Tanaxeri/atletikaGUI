@@ -11,24 +11,24 @@ namespace atletikaGUI
 
         readonly string nemzet;
         readonly string nem;
-        readonly int versenySzam;
+        readonly string versenySzam;
         readonly string versenyzoNev;
-        readonly double eredmeny;
+        readonly string eredmeny;
         readonly int helyezes;
 
         public string Nemzet => nemzet;
 
         public string Nem => nem;
 
-        public int VersenySzam => versenySzam;
+        public string VersenySzam => versenySzam;
 
         public string VersenyzoNev => versenyzoNev;
 
-        public double Eredmeny => eredmeny;
+        public string Eredmeny => eredmeny;
 
         public int Helyezes => helyezes;
 
-        public verAdatok(string nemzet, string nem, int versenySzam, string versenyzoNev, double eredmeny, int helyezes)
+        public verAdatok(string nemzet, string nem, string versenySzam, string versenyzoNev, string eredmeny, int helyezes)
         {
             this.nemzet = nemzet;
             this.nem = nem;
@@ -39,7 +39,10 @@ namespace atletikaGUI
 
         }
 
-
+        public override string ToString()
+        {
+            return versenySzam;
+        }
 
     }
 }

@@ -39,10 +39,10 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.nevtext = new System.Windows.Forms.TextBox();
-            this.eredmenytext = new System.Windows.Forms.TextBox();
-            this.nemzettext = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.nevtext = new System.Windows.Forms.Label();
+            this.eredmenytext = new System.Windows.Forms.Label();
+            this.nemzettext = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ValaszErmesHely)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,9 +94,24 @@
             // ValaszErmesHely
             // 
             this.ValaszErmesHely.Location = new System.Drawing.Point(423, 177);
+            this.ValaszErmesHely.Maximum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.ValaszErmesHely.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.ValaszErmesHely.Name = "ValaszErmesHely";
             this.ValaszErmesHely.Size = new System.Drawing.Size(46, 27);
             this.ValaszErmesHely.TabIndex = 5;
+            this.ValaszErmesHely.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // Keres
             // 
@@ -144,31 +159,6 @@
             this.label8.Size = new System.Drawing.Size(86, 18);
             this.label8.TabIndex = 11;
             this.label8.Text = "nemzete:";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
-            // 
-            // nevtext
-            // 
-            this.nevtext.Location = new System.Drawing.Point(442, 422);
-            this.nevtext.Name = "nevtext";
-            this.nevtext.Size = new System.Drawing.Size(108, 27);
-            this.nevtext.TabIndex = 12;
-            this.nevtext.Visible = false;
-            // 
-            // eredmenytext
-            // 
-            this.eredmenytext.Location = new System.Drawing.Point(442, 455);
-            this.eredmenytext.Name = "eredmenytext";
-            this.eredmenytext.Size = new System.Drawing.Size(108, 27);
-            this.eredmenytext.TabIndex = 13;
-            this.eredmenytext.Visible = false;
-            // 
-            // nemzettext
-            // 
-            this.nemzettext.Location = new System.Drawing.Point(442, 496);
-            this.nemzettext.Name = "nemzettext";
-            this.nemzettext.Size = new System.Drawing.Size(108, 27);
-            this.nemzettext.TabIndex = 14;
-            this.nemzettext.Visible = false;
             // 
             // button1
             // 
@@ -180,16 +170,40 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // nevtext
+            // 
+            this.nevtext.AutoSize = true;
+            this.nevtext.Location = new System.Drawing.Point(446, 431);
+            this.nevtext.Name = "nevtext";
+            this.nevtext.Size = new System.Drawing.Size(0, 18);
+            this.nevtext.TabIndex = 16;
+            // 
+            // eredmenytext
+            // 
+            this.eredmenytext.AutoSize = true;
+            this.eredmenytext.Location = new System.Drawing.Point(444, 466);
+            this.eredmenytext.Name = "eredmenytext";
+            this.eredmenytext.Size = new System.Drawing.Size(0, 18);
+            this.eredmenytext.TabIndex = 17;
+            // 
+            // nemzettext
+            // 
+            this.nemzettext.AutoSize = true;
+            this.nemzettext.Location = new System.Drawing.Point(442, 503);
+            this.nemzettext.Name = "nemzettext";
+            this.nemzettext.Size = new System.Drawing.Size(0, 18);
+            this.nemzettext.TabIndex = 18;
+            // 
             // GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1640, 915);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.nemzettext);
             this.Controls.Add(this.eredmenytext);
             this.Controls.Add(this.nevtext);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -226,10 +240,10 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox nevtext;
-        private System.Windows.Forms.TextBox eredmenytext;
-        private System.Windows.Forms.TextBox nemzettext;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label nevtext;
+        private System.Windows.Forms.Label eredmenytext;
+        private System.Windows.Forms.Label nemzettext;
     }
 }
 
